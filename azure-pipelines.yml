@@ -37,7 +37,7 @@ stages:
     - task: gulp@1
       displayName: 'Run gulp tasks'
 
-    - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $20200530" > buildinfo.txt'
+    - script: 'echo "$(Build.DefinitionName), $gamespace, $20200530" > buildinfo.txt'
       displayName: 'Write build info'
       workingDirectory: $(wwwrootDir)
 
